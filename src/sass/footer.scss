@@ -1,0 +1,38 @@
+footer{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    background-color: #ffffff66;
+
+    h5{
+        font-weight: bold;
+    }
+
+    .links li{
+        list-style: none;
+    }
+
+    .links li > a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .links a:hover {
+        color: rgb(154, 152, 194);
+        font-weight: 700;
+        
+    }
+
+}
+
+.list2{
+    float: left;
+    margin: 5%;
+
+    a{
+        text-decoration: none;
+        color:black ;
+    }
+    a:hover{
+        color: rgb(93, 97, 93);
+        font-weight: bold;
+    }
+}

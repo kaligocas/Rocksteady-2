@@ -1,0 +1,17 @@
+@import url(./../../style.scss);
+
+main{
+    h1, p, label{
+        font-family: 'Anonymous Pro', monospace;
+    }
+
+    .form_events{
+        background-color: #0000004f;
+        border-radius: 5px;
+    }
+
+    .card-title{
+        font-family: 'Anonymous Pro', monospace;
+    }
+
+}

@@ -14,7 +14,7 @@
     <header>
       <nav class="navbar navbar1 navbar-expand-lg justify-content-center">
         <div class="container-fluid align-content-center m-3">
-          <img src="./public/assets/Logo/Steady 02.png" alt="Logo_Rocsteady" width="100">
+          <img src="./../../public/assets/Logo/Steady 02.png" alt="Logo_Rocsteady" width="100">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -33,10 +33,10 @@
                 <a class="nav-link" href="./playlist.html">PLAYLIST</a>
               </li>
               <li class="nav-item menu-items p-3 m-4">
-                <a class="nav-link" href="#">EVENTOS</a>
+                <a class="nav-link" href="./eventos.html">EVENTOS</a>
               </li>
               <li class="nav-item menu-items p-3 m-4">
-                <a class="nav-link" href="#">SHOP</a>
+                <a class="nav-link" href="./shop.html">SHOP</a>
               </li>
             </ul>
           </div>
@@ -44,79 +44,147 @@
       </nav>
     </header>
 
-    <main>
+    <div id="player" class="container">
+      <audio controls="" id="audio" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="./../../public/assets/audio_playlist/01.mp3" type="audio/mp3"></source>
+      </audio>
+      </div>
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <p class="fw-bold">Canción</p>
+          </div>
+          <div class="col">
+            <p class="fw-bold">Artista</p>
+          </div>
+          <div class="col">
+            <p class="fw-bold">Album</p>
+          </div>
+          <div class="col">
+            <p class="fw-bold">Duración</p>
+          </div>
+        </div>
+      </div>
+      <ul id="playlist">
+      <li class="active white">
+        <div class="row">
+          <div class="col-3">
+            <a href="./../../public/assets/audio_playlist/01.mp3">
+              <img class="img_audio" src="./../../assets/Discos/Delroy-Wilson_Dancing Mood.jpg" class="img-fluid">
+              Dancing Mood
+            </a>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">Delory Wilson</p>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">Reggae Resurrection</p>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">2:54</p>
+          </div>
+        </div>
         
-            <h2 class="mb-4"><strong>Enjoy our selection</strong></h2>
-            <audio controls id="audioPlayer" class="mt-3 justify-content-end">
-              Tu navegador no soporta el elemento de audio.
-            </audio>
-            <div class="table-responsive">
-              <table class="table table-striped opacity-75 shadow p-3 mb-5 rounded">
-                <thead>
-                  
-                  <tr id="playlist">
-                    
-                   
-                    <th class="bg-transparent"></th>
-                    <th class="bg-transparent">Canción</th>
-                    <th class="bg-transparent">Artista</th>
-                    <th class="bg-transparent">Album</th>
-                    <th class="bg-transparent">Duración</th>
-                  </tr>
-                </thead>
-    
-                <tbody>
-                  <tr class="hover">
-                  <td><img src="./../../assets/Discos/Delroy-Wilson_Dancing Mood.jpg" class="img-fluid"></td>
-                    <td>Dancing Mood</td>
-                    <td>Delroy Wilson</td>
-                    <td>Reggae Resurrection</td>
-                    <td>2:43</td>
-                  </tr>
-    
-                  <tr class="table-danger">
-                    <td><img src="./../../assets/Discos/Alton-Ellys_The-Flames.jpg"></td>
-                    <td>Girl I ve got a Date</td>
-                    <td>Alton Ellis  & The Flames</td>
-                    <td>Be True to Yourself</td>
-                    <td>2:29</td>
-                  </tr>
-    
-                  <tr>
-                    <td><img src="./../../assets/Discos/Phyllis_Dyllan.jpeg"></td>
-                    <td>Perfidia</td>
-                    <td>Phyllis Dylan</td>
-                    <td>Women in Reggae</td>
-                    <td>2:49</td>
-                  </tr>
-    
-                  <tr class="table-danger">
-                    <td><img src="./../../assets/Discos/Tommy_McCook.webp"></td>
-                    <td>Inez</td>
-                    <td>Tommy McCook</td>
-                    <td>Rocksteady Beat</td>
-                    <td>3:48</td>
-                  </tr>
-    
-                  <tr>
-                    <td><img src="./../../assets/Discos/The paragons.jpg"></td>
-                    <td>The Tide is High</td>
-                    <td>The Paragons</td>
-                    <td>On the Beach with the Paragons</td>
-                    <td>2:42</td>
-                  </tr>
-    
-                  <tr class="table-danger">
-                    <td><img src="./../../assets/Discos/Alton Ellis .jpeg"></td>
-                    <td>Rock Steady</td>
-                    <td>Alton Ellis</td>
-                    <td>Duke Reid Golden Hits</td>
-                    <td>2:38</td>
-                  </tr>
-                </tbody>
-                </table>
-            </div>
-    </main>
+      </li>
+      <li class="active red"  >
+        <div class="row">
+          <div class="col-3">
+            <a href="./../../public/assets/audio_playlist/02.mp3">
+              <img class="img_audio" src="./../../public/assets/Discos/Alton-Ellys_The-Flames.jpg" class="img-fluid">
+              Girl I've Got a Date
+            </a>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">Alton Ellis & Flames</p>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">Be true to Yourlseft</p>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">2:29</p>
+          </div>
+        </div>
+      </li>
+      <li class="active white">
+        <div class="row">
+          <div class="col-3">
+            <a href="./../../public/assets/audio_playlist/03.mp3">
+              <img class="img_audio" src="./../../public/assets/Discos/Phyllis_Dyllan.jpeg" class="img-fluid">
+              Perfidia
+            </a>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">Phyllis DylanS</p>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">Women in Reggae</p>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">2:45</p>
+          </div>
+        </div>
+        
+      </li>
+      <li class="active red"  >
+        <div class="row">
+          <div class="col-3">
+            <a href="./../../public/assets/audio_playlist/04.mp3">
+              <img class="img_audio" src="./../../public/assets/Discos/Alton-Ellys_The-Flames.jpg" class="img-fluid">
+              Inez
+            </a>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">Tommy McCook</p>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">Rocksteady Beat</p>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">3:48</p>
+          </div>
+        </div>
+      </li>
+      <li class="active white"  >
+        <div class="row">
+          <div class="col-3">
+            <a href="./../../public/assets/audio_playlist/05.mp3">
+              <img class="img_audio" src="./../../public/assets/Discos/The paragons.jpg" class="img-fluid">
+              The Tide Is High
+            </a>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">The Paragons</p>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">One The Beach</p>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">2:42</p>
+          </div>
+        </div>
+      </li>
+      <li class="active red"  >
+        <div class="row">
+          <div class="col-3">
+            <a href="./../../public/assets/audio_playlist/06.mp3">
+              <img class="img_audio" src="./../../public/assets/Discos/Alton Ellis .jpeg" class="img-fluid">
+              Rock Steady 
+            </a>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">Alton Ellis</p>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">Duke Reid Golden Hits</p>
+          </div>
+          <div class="col text-center">
+            <p class="p-2">2:38</p>
+          </div>
+        </div>
+      </li>
+      </ul>
+
 
 
 
@@ -157,6 +225,7 @@
         </div>
       </nav>
     </footer>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'></script>
     <script src="./../js/playlist.js"></script>
     <script type="module" src="./../../main.js"></script>
   </body>

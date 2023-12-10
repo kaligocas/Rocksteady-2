@@ -1,18 +1,18 @@
-/*document.addEventListener('DOMContentLoaded', function () {
-    const playlistElement = document.getElementById('playlist');
-    const audioPlayer = document.getElementById('audioPlayer');
-  
-    const playlist = [
-      { title: 'Canción 1', src: './assets/Alton Ellis Girl I ve Got A Date-.mp3' },
-      { title: 'Canción 2', src: './assets/Alton Ellis Rocksteady.mp3' },
+document.addEventListener('DOMContentLoaded', function () {
+  const audioPlayer = document.getElementById('audioPlayer');
+  const playButton = document.getElementById('playButton');
+  playButton.addEventListener('click', function () {
+    if (audioPlayer.paused) {
+      audioPlayer.play();
+      playButton.textContent = 'Stop';
+    } else {
+      audioPlayer.pause();
+      playButton.textContent = 'Play';
+    }
+  });
+});
 
-    ];
-  
-    playlist.forEach((song, index) => {
-      const listItem = document.createElement('li');
-      listItem.textContent = `${index + 1}. ${song.title}`;
-      listItem.classList.add('list-group-item');
-      listItem.addEventListener('click', () => playSong(index));
-      playlistElement.appendChild(listItem);
-    });
-*/
+/*document.getElementById('playButton').addEventListener('click', function() {
+  var audio = document.getElementById('audioPlayer');
+  audio.play();
+});*/

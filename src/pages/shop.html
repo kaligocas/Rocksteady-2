@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../sass/shop.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@0;1&family=Macondo+Swash+Caps&family=Montserrat&family=Poppins:wght@200;300&family=Recursive&family=Roboto+Condensed:wght@100&family=Shadows+Into+Light&family=Zen+Kaku+Gothic+Antique&family=Zen+Maru+Gothic:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rocksteady-Music</title>
+  </head>
+  <body>
+    
+    <header>
+      <nav class="navbar navbar1 navbar-expand-lg justify-content-center">
+        <div class="container-fluid align-content-center m-3">
+          <img src="./../../public/assets/Logo/Steady 02.png" alt="Logo_Rocsteady" width="100">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item menu-items p-3 m-4">
+                <a class="nav-link" href="./../../index.html">HOME</a>
+              </li>
+              <li class="nav-item menu-items p-3 m-4">
+                <a class="nav-link" href="./history.html">HISTORIA</a>
+              </li>
+              <li class="nav-item menu-items p-3 m-4">
+                <a class="nav-link" href="./gallery.html">GALERIA</a>
+              </li>
+              <li class="nav-item menu-items p-3 m-4">
+                <a class="nav-link" href="./playlist.html">PLAYLIST</a>
+              </li>
+              <li class="nav-item menu-items p-3 m-4">
+                <a class="nav-link" href="./eventos.html">EVENTOS</a>
+              </li>
+              <li class="nav-item menu-items p-3 m-4">
+                <a class="nav-link" href="./shop.html">SHOP</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-icon p-3 m-5">
+                            <div class="container-cart-icon float-end">
+                                <p class="display-5 justify-end"><i class="fa-solid fa-cart-shopping"></i></p>
+                                <div class="count-products">
+                                    <span id="contador-productos">0</span>
+                                </div>
+                            </div>
+                
+                            <div class="container-cart-products hidden-cart">
+                                <div class="row-product hidden text-bg-light">
+                                    <div class="cart-product">
+                                        <div class="info-cart-product">
+                                            <span class="cantidad-producto-carrito">1</span>
+                                            <p class="titulo-producto-carrito">Libro</p>
+                                            <span class="precio-producto-carrito">€80</span>
+                                        </div>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            class="icon-close"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M6 18L18 6M6 6l12 12"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+                
+                                <div class="cart-total hidden text-bg-light">
+                                    <h3>Total:</h3>
+                                    <span class="total-pagar">€200</span>
+                                </div>
+                                <p class="cart-empty text-bg-light">El carrito está vacío</p>
+                            </div>
+                        </div>
+
+                        <div class="container-items">
+                            <div class="item">
+                                <figure>
+                                    <img src="./../../public/assets/Shop/Cartel_Jamaica_1.jpg"  alt="producto"/>
+                                </figure>
+                                <div class="info-product">
+                                    <h2 class="text-center">Cartel de Jamaica</h2>
+                                    <p class="price text-center">€80</p>
+                                    <button class="btn-add-cart">Añadir al carrito</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <figure>
+                                    <img
+                                        src="./../../public/assets/Shop/Camisa_tradicional.jpg"
+                                        alt="producto"/>
+                                </figure>
+                                <div class="info-product">
+                                    <h2 class="text-center">Bata R.S</h2>
+                                    <p class="price text-center">€20</p>
+                                    <button class="btn-add-cart">Añadir al carrito</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <figure>
+                                    <img
+                                        src="./../../public/assets/Shop/yellowman.jpg"
+                                        alt="producto"
+                                    />
+                                </figure>
+                                <div class="info-product">
+                                    <h2 class="text-center">Cuadro</h2>
+                                    <p class="price text-center">€50</p>
+                                    <button class="btn-add-cart">Añadir al carrito</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <figure>
+                                    <img src="./../../public/assets/Shop/Cartel_Jamaica_1.jpg"  alt="producto"/>
+                                </figure>
+                                <div class="info-product">
+                                    <h2 class="text-center">Cartel de Jamaica</h2>
+                                    <p class="price text-center">€80</p>
+                                    <button class="btn-add-cart">Añadir al carrito</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <figure>
+                                    <img
+                                        src="./../../public/assets/Shop/Camisa_tradicional.jpg"
+                                        alt="producto"/>
+                                </figure>
+                                <div class="info-product">
+                                    <h2 class="text-center">Bata R.S</h2>
+                                    <p class="price text-center">€20</p>
+                                    <button class="btn-add-cart">Añadir al carrito</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <figure>
+                                    <img
+                                        src="./../../public/assets/Shop/yellowman.jpg"
+                                        alt="producto"
+                                    />
+                                </figure>
+                                <div class="info-product">
+                                    <h2 class="text-center">Cuadro</h2>
+                                    <p class="price text-center">€50</p>
+                                    <button class="btn-add-cart">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+    <footer class="text-dark pt-4">
+      <nav class="navbar navbar2 navbar-expand-lg">
+        <div class="container-fluid justify-content-center">
+          <h5 class="m-5">&#169;​ 2023 Rocksteady Music, Spain</h5>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="vr"></div>
+              <li class="nav-item text-center m-5">
+                  <h5>CONTACTO</h5>
+                  <p><i class="fa-solid fa-envelope fs-2"></i></p>  
+              </li>
+              <li class="nav-item m-5 links">
+                <ul>
+                  <li><a href="https://www.rocksteadymusicschool.com/privacy-notice/" target="_blank">Policy Notice</a></li>
+                  <li><a href="https://www.rocksteadymusicschool.com/cookie-policy/" target="_blank">Cookie Policy</a></li>
+                  <li><a href="https://www.rocksteadymusicschool.com/terms-conditions/" target="_blank">Website Terms & Conditions</a></li>
+                  <li><a href="https://www.rocksteadymusicschool.com/policies/Safeguarding_Policy_Rocksteady_2023_24.pdf" target="_blank">Safeguarding Policy</a></li>
+                </ul>
+              </li>
+              <div class="vr"></div>
+              <li class="nav-item m-5 links">
+                
+                <h5 class="text-center">SIGUENOS</h5>
+                <ul>
+                  <li class="list2 m-3"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fs-2"></i></a></li>
+                  <li class="list2 m-3"><a href="https://www.facebook.com/?locale=es_ES" target="_blank"><i class="fa-brands fa-facebook fs-2"></i></a></li>
+                  <li class="list2 m-3"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Finiciarsesion" target="_blank"><i class="fa-brands fa-twitter fs-2 "></i></a></li>
+                </ul>
+              </li>
+             
+          </div>
+        </div>
+      </nav>
+    </footer>
+    <script src="./../js/app.js"></script>
+    <script type="module" src="./../../main.js"></script>
+  </body>
+</html>
